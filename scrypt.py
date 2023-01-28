@@ -5,8 +5,6 @@ from matplotlib import pyplot as plt
 import os
 from os import path
 
-def hello():
-  print("HELLO WORLD")
 
 def runScriptPy():
   folder = 'upload\\'
@@ -59,5 +57,15 @@ def runScriptPy():
   # plt.show()
   path_ = path.join('run', 'image' + extension)
   # print(path)
+
+  # empty run folder before saving new pic
+  dir = os.getcwd() + r'\run'
+  for f in os.listdir(dir):
+      os.remove(os.path.join(dir, f))
+      
   cv2.imwrite(path_, img)
-  return b
+
+  extension = (extension.split('.'))[1]
+  output={'out_str':b, 'ext':extension}
+  return output
+
