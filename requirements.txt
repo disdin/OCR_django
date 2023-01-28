@@ -1,5 +1,5 @@
 Django==3.2.16
 easyocr==1.6.2
 matplotlib==3.5.3
-numpy==1.24.1
+numpy==1.21.6
 opencv_python_headless==4.5.4.60
