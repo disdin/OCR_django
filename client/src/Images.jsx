@@ -12,16 +12,16 @@ function Images() {
   }, [imgInput]);
   const allImages =
     [
-      { id: 1, image: './ocr_pics/1.jpg', out: './output/1.png' },
-      { id: 2, image: './ocr_pics/2.jpg', out: './output/2.png' },
-      { id: 3, image: './ocr_pics/3.jpg', out: './output/3.png' },
-      { id: 4, image: './ocr_pics/4.jpg', out: './output/4.png' },
-      { id: 5, image: './ocr_pics/5.jpg', out: './output/5.png' },
-      { id: 6, image: './ocr_pics/6.jpg', out: './output/6.png' },
-      { id: 7, image: './ocr_pics/7.jpg', out: './output/7.png' },
-      { id: 8, image: './ocr_pics/8.jpg', out: './output/8.png' },
-      { id: 9, image: './ocr_pics/9.jpg', out: './output/9.png' },
-      { id: 10, image: './ocr_pics/10.jpg', out: './output/10.jpg' }
+      { id: 1, image: 'static/1.jpg', out: 'static/out1.png' },
+      { id: 2, image: 'static/2.jpg', out: 'static/out2.png' },
+      { id: 3, image: 'static/3.jpg', out: 'static/out3.png' },
+      { id: 4, image: 'static/4.jpg', out: 'static/out4.png' },
+      { id: 5, image: 'static/5.jpg', out: 'static/out5.png' },
+      { id: 6, image: 'static/6.jpg', out: 'static/out6.png' },
+      { id: 7, image: 'static/7.jpg', out: 'static/out7.png' },
+      { id: 8, image: 'static/8.jpg', out: 'static/out8.png' },
+      { id: 9, image: 'static/9.jpg', out: 'static/out9.png' },
+      { id: 10, image: 'static/10.jpg', out: 'static/out10.png' }
     ]
   const [path_clicked, setpath_clicked] = useState("");
   const image_clicked = (item) => {
@@ -60,7 +60,7 @@ const checkHandler=()=>{
             <button className='run_btn' onClick={checkHandler} >Check</button>
             <div className='image_div'>
               {showImg ? <img className="image_check"  src={imgInput.out}  /> 
-              : loading ? <img className='loading_gif' src='loading_gif.gif'></img> : <></>}
+              : loading ? <img className='loading_gif' src='static/loading_gif.gif'></img> : <></>}
 
             </div>
           </div> : <></>

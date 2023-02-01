@@ -76,7 +76,7 @@ function Upload() {
                         {base64out ?
                             <img src={`data:image/${fileExtension};base64,${base64out}`} className='upload-image' />
                             :
-                            loading ? <img style={{ marginTop: "-4rem" }} src='loading_gif.gif'></img> : <></>}
+                            loading ? <img style={{ marginTop: "-4rem" }} src='static/loading_gif.gif'></img> : <></>}
                     </div>
                 </div>
                 <p style={{ fontWeight: "600", fontSize: "2rem" }}>{output}</p>
