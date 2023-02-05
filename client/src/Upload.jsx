@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import Images from './Images';
 import './upload.css';
-const backend_url = "http://localhost:8000"
+const backend_url = process.env.REACT_APP_BACKEND_URI
 
 function Upload() {
     // const axios_instance = axios.create({

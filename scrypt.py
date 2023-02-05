@@ -7,7 +7,7 @@ from os import path
 
 
 def runScriptPy():
-  folder = 'upload\\'
+  folder = 'upload/'
   # img1 = cv2.imread(filename)
   for filename in os.listdir(folder):
     img1 = cv2.imread(os.path.join(folder,filename))
@@ -59,7 +59,7 @@ def runScriptPy():
   # print(path)
 
   # empty run folder before saving new pic
-  dir = os.getcwd() + r'\run'
+  dir = os.getcwd() + r'/run'
   for f in os.listdir(dir):
       os.remove(os.path.join(dir, f))
       

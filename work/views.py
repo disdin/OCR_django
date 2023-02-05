@@ -19,7 +19,7 @@ def uploadImage(request):
         image_name = request.FILES['image_name'].name
         extension = (image_name.split('.'))[1]
 
-        upload_folder= r'\upload'
+        upload_folder= r'/upload'
         current_working_directory =os.getcwd()
         location = "".join([current_working_directory, upload_folder])
         os.chdir(location)
@@ -38,7 +38,7 @@ def runScrypt(request):
     if request.method == "POST":
         output = scrypt.runScriptPy()
         
-        run_folder= r'\run'
+        run_folder= r'/run'
         current_working_directory =os.getcwd()
         location = "".join([current_working_directory, run_folder])
         os.chdir(location)
